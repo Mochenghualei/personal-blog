@@ -1,5 +1,7 @@
 let plugins = require("./plugins")
 module.exports = {
+  // 和仓库名相同
+  base: "/personal-blog/",
   plugins,
   title: "mocheng",
   description: "欢迎访问我的随笔杂货店",
