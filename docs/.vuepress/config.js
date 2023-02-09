@@ -41,7 +41,7 @@ module.exports = {
       },
       {
         text: "Github",
-        link: "https://github.com/Xusssyyy",
+        link: "https://github.com/Mochenghualei",
         icon: "reco-github",
       },
     ],
@@ -57,19 +57,19 @@ module.exports = {
       },
       socialLinks: [
         // 信息栏展示社交信息
-        { icon: "reco-github", link: "https://github.com/recoluan" },
-        { icon: "reco-npm", link: "https://www.npmjs.com/~reco_luan" },
+        { icon: "reco-github", link: "https://github.com/Mochenghualei" },
+        { icon: "reco-mayun", link: "https://gitee.com/mochenghualei" },
       ],
     },
     // 添加友链
-    friendLink: [
-      {
-        title: "vuepress-theme-reco",
-        desc: "A simple and beautiful vuepress Blog & Doc theme.",
-        logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: "https://vuepress-theme-reco.recoluan.com",
-      },
-    ],
+    // friendLink: [
+    //   {
+    //     title: "vuepress-theme-reco",
+    //     desc: "A simple and beautiful vuepress Blog & Doc theme.",
+    //     logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
+    //     link: "https://vuepress-theme-reco.recoluan.com",
+    //   },
+    // ],
   },
 
   // 多语言
