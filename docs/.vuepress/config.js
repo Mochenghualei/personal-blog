@@ -1,8 +1,13 @@
 let plugins = require("./plugins")
 module.exports = {
+  head: [
+    // 设置 favor.ico，.vuepress/public 下
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+  ],
   // 和仓库名相同
   base: "/personal-blog/",
   plugins,
+
   title: "mocheng",
   description: "欢迎访问我的随笔杂货店",
   theme: "reco",
@@ -13,7 +18,7 @@ module.exports = {
     subSidebar: "auto",
     logo: "/avatar.jpg",
     authorAvatar: "/avatar.jpg",
-    author: "shuai",
+    author: "mocheng.shuai",
     type: "blog",
     // 备案
     // record: "ICP 备案文案",
@@ -21,7 +26,7 @@ module.exports = {
     // cyberSecurityRecord: "公安部备案文案",
     // cyberSecurityLink: "公安部备案指向链接",
     // 项目开始时间，只填写年份
-    startYear: "2021",
+    startYear: "2022",
     // 密钥
     // keyPage: {
     //   keys: ["c5b2cebf15b205503560c4e8e6d1ea78"], // 1.3.0 版本后需要设置为密文
@@ -36,7 +41,14 @@ module.exports = {
         text: "我的站点",
         icon: "reco-blog",
         items: [
-          { text: "掘金", link: "https://juejin.cn/user/233526039432445" },
+          {
+            text: "前端森林",
+            link: "https://mochenghualei.github.io/my-personal-website/",
+          },
+          {
+            text: "Mocheng.shuai",
+            link: "https://mochenghualei.github.io/personal-blog/666",
+          },
         ],
       },
       {
@@ -58,6 +70,8 @@ module.exports = {
       socialLinks: [
         // 信息栏展示社交信息
         { icon: "reco-github", link: "https://github.com/Mochenghualei" },
+        { icon: "reco-bilibili", link: "https://space.bilibili.com/278851804" },
+        { icon: "reco-blog", link: "https://www.cnblogs.com/Mochenghualei/" },
         { icon: "reco-mayun", link: "https://gitee.com/mochenghualei" },
       ],
     },
