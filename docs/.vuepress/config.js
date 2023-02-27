@@ -2,7 +2,7 @@ let plugins = require("./plugins")
 module.exports = {
   head: [
     // 设置 favor.ico，.vuepress/public 下
-    ["link", { rel: "icon", href: "/favicon.png" }],
+    ["link", { rel: "icon", href: "favicon.png" }],
   ],
   // 和仓库名相同
   base: "/personal-blog/",
@@ -43,7 +43,7 @@ module.exports = {
         items: [
           {
             text: "前端森林",
-            link: "https://mochenghualei.github.io/my-personal-website/",
+            link: "https://mochenghualei.gitee.io/my-personal-website/#/",
           },
           {
             text: "Mocheng.shuai",
