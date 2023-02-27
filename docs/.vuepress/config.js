@@ -2,7 +2,7 @@ let plugins = require("./plugins")
 module.exports = {
   head: [
     // 设置 favor.ico，.vuepress/public 下
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "/favicon.png" }],
   ],
   // 和仓库名相同
   base: "/personal-blog/",
