@@ -1,14 +1,12 @@
 ---
-title: 高频面试题：手写实现Promise🔥
+title: 【高频面试题】：手写实现Promise🔥
 author: shuai
 date: "2022-2-9"
 categories:
   - 前端
 tags:
-  - 面试题
+  - 面试
 ---
-
-
 
 ```js
 // 声明变量保存状态
@@ -68,6 +66,7 @@ MyPromise.prototype.then = function (onFulfilled, onRejected) {
   // 判断状态，执行相应的回调
   if (that.state === PENDING) {
     that.resolveCallbacks.push(onFulfilled)
+    that.rejectedCallbacks.push(onRejected)
   }
 
   if (that.state === RESOLVE) {
@@ -88,4 +87,3 @@ pr.then(
   (err) => console.log(err)
 )
 ```
-

@@ -4,8 +4,9 @@ author: shuai
 date: "2022-2-27"
 categories:
   - 前端
-tags:
   - 算法
+tags:
+  - 排序算法
 ---
 
 - 1.简单桶排序
@@ -25,14 +26,14 @@ tags:
   for (let i = 0; i < arr.length; i++) {
     sortArr[arr[i]]++
   }
-  
+
   // 输出结果
   for (let i = 0; i < sortArr.length; i++) {
     for (let j = 0; j < sortArr[i]; j++) {
       resArr.push(i)
     }
   }
-  
+
   console.log(resArr)
   // [1, 2, 3, 5,  5, 6, 7, 8, 9, 10]
   ```
@@ -42,7 +43,7 @@ tags:
 - ```js
   // 冒泡排序
   let arr = [6, 1, 2, 7, 9, 3, 5, 5, 10, 8]
-  
+
   for (let i = 1; i < arr.length; i++) {
     for (let j = 0; j < arr.length - i; j++) {
       if (arr[j] > arr[j + 1]) {
@@ -52,7 +53,7 @@ tags:
       }
     }
   }
-  
+
   console.log(arr)
   // [1, 2, 3, 5,  5, 6, 7, 8, 9, 10]
   ```
@@ -62,7 +63,7 @@ tags:
 - ```js
   // 快速排序
   let arr = [6, 1, 2, 7, 9, 5, 4, 5, 10, 8]
-  
+
   function quickSort(left, right) {
     // 循环结束条件
     if (left > right) {
@@ -95,10 +96,8 @@ tags:
     quickSort(i + 1, right)
     return
   }
-  
+
   quickSort(0, arr.length - 1)
   console.log(arr)
   // [1, 2, 4, 5, 5, 6, 7, 8, 9, 10]
   ```
-
-  
